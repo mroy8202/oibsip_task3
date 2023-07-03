@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- navigation bar -->
+        <div id="navigation-bar">
+            <div class="to-do-list">
+                <h1 class="nav-heading">To-Do-List</h1>
+                <p class="reset">Reset</p>
+            </div>
+        </div>
+
+        <!-- add task container -->
+        <div id="add-task-container">
+            <input class="input-container" type="text" placeholder="add text here ...">
+            <button class="add-button">Add</button>
+        </div>
+
+        <!-- information container -->
+        <div id="information-container">
+            <!-- pending task container -->
+            <div id="pending-task-container">
+                <h1 class="heading">Pending Tasks</h1>
+                <!-- task 1 -->
+                <div class="task">
+                    <div class="task-content">
+                        <!-- round div -->
+                        <div class="round-div-container pending-round-div-container"></div>
+                        <!-- text -->
+                        <p class="text pending-task-text">This is a task</p>
+                    </div>
+                    <!-- cross button inside div -->
+                    <div class="cross-round-div">
+                        <p>x</p>
+                    </div>
+                </div>
+
+                <!-- task 2 -->
+                <div class="task">
+                    <div class="task-content">
+                        <!-- round div -->
+                        <div class="round-div-container pending-round-div-container"></div>
+                        <!-- text -->
+                        <p class="text pending-task-text">This is a task</p>
+                    </div>
+                    <!-- cross button inside div -->
+                    <div class="cross-round-div">
+                        <div class="round-div">
+                            <p>x</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                
+            </div>
+
+
+            <!-- completed task container -->
+            <div id="completed-task-container">
+                <h1 class="heading">Completed Tasks</h1>
+                <div class="task">
+                    <div class="task-content">
+                        <!-- round div -->
+                        <div class="round-div-container completed-round-div-container">
+                            <p class="tick-mark">✓</p>
+                        </div>
+                        <!-- text -->
+                        <p class="text completed-text">This is a task</p>
+                    </div>
+                    <!-- cross button inside div -->
+                    <div class="cross-round-div">
+                        <div class="round-div">
+                            <p>x</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <div class="task-content">
+                        <!-- round div -->
+                        <div class="round-div-container completed-round-div-container">
+                            <p class="tick-mark">✓</p>
+                        </div>
+                        <!-- text -->
+                        <p class="text completed-text">This is a task</p>
+                    </div>
+                    <!-- cross button inside div -->
+                    <div class="cross-round-div">
+                        <div class="round-div">
+                            <p>x</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <div class="task-content">
+                        <!-- round div -->
+                        <div class="round-div-container completed-round-div-container">
+                            <p class="tick-mark">✓</p>
+                        </div>
+                        <!-- text -->
+                        <p class="text completed-text">This is a task</p>
+                    </div>
+                    <!-- cross button inside div -->
+                    <div class="cross-round-div">
+                        <div class="round-div">
+                            <p>x</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
