@@ -80,7 +80,8 @@ h1 {
 /* information container */
 #information-container {
     display: flex;
-    margin: 2rem;
+    width: 90%;
+    margin: 2rem auto;
     gap: 3rem;
 }
 
@@ -161,6 +162,54 @@ h1 {
     background-color: #EEE2DE;
     color: #B31312;
     transition: all 0.2s;
+}
+
+@media (max-width: 800px) {
+    #add-task-container {
+        width: 91%;
+    }
+    #information-container {
+        flex-direction: column;
+    }
+    #pending-task-container, #completed-task-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .to-do-list {
+        flex-direction: column;
+    }
+    .nav-heading {
+        font-size: 2rem;
+    }
+
+    #add-task-container {
+        height: 3rem;
+    }
+    .input-container {
+        width: 100%;
+        border-top-left-radius: .5rem;
+        border-bottom-left-radius: .5rem;
+        font-size: 0.7rem;
+    }
+    .add-button {
+        width: 5rem;
+        border-top-right-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        font-size: 0.8rem;
+    }
+
+    /* pending task container */
+    .tick-mark {
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
 }
 
 
